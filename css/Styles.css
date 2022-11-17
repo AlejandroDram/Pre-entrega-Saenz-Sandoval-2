@@ -1,0 +1,341 @@
+
+/*Estilos del html, Index Flex-Box*/
+body{
+    background: #c7cac5;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+section{
+    filter: drop-shadow(1px 1px 3px);
+    animation-name: titulos-movimiento;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes titulos-movimiento {
+    to{
+    transform:scale(1);
+    }
+    from{
+        transform:scale(0.1);
+    }
+    
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #caf74e;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 10px;
+    
+}
+
+header img:hover{
+    filter: drop-shadow(5px 5px 3px);
+    transform: scale(1.1);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 90px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color:rgb(189, 45, 182);
+    color:white
+}   
+
+
+
+@media (max-whidth:700px){
+    header{
+        flex-direction: column;
+
+    }
+    nav{
+        padding: 10px;
+    }
+}
+
+header nav
+
+main {
+    margin: 200px 0;
+    text-align: center;
+}
+
+
+main h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+main h2{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main .servicios {
+    margin: 40px 0;
+    display: flex;
+}
+main .servicios .servicios__card h3{
+    text-align: center;
+}
+
+main .servicios .servicios__card img{
+    margin: 0 70px;
+    width: 300px;
+    height: 300px;
+}
+
+
+main .servicios .servicios__card p{
+    text-align: center;
+    margin: 0 50px;
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+}
+
+/*Pagina 2 Deportivos*/
+      /*CSS GRID*/
+
+      .grid-container{
+      display: grid;
+      background-color: cornsilk;
+      grid-template-areas:
+      "header1 header2 "
+      "menu main "
+      "body1 body2"
+      "footer1 footer2  ";
+      }
+
+      .grid-container div{
+        background-color: crimson;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+        height: 200px;
+    }
+
+    .texto1{
+        grid-area: header1;
+    }
+    .texto2{
+        grid-area: header2;
+    }
+    .texto3{
+        grid-area: menu;
+    }
+    .texto4{
+        grid-area: main;
+    }
+    .texto5{
+        grid-area: body1;
+    }
+    .texto6{
+        grid-area: body2;
+ }
+
+
+ .texto1 img{
+    height: 200px;
+    margin: auto;
+ }
+ 
+ .texto3 img{
+    height: 230px;
+    width: 500px;
+    margin: auto; 
+}
+
+ .texto5 img{
+    height: 200px;
+    width: 500px;
+    margin: auto; 
+}
+
+
+
+/*Pagina 3 Clasicos */
+    /*Carrusel*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-color: rgb(226, 50, 50);
+}
+
+#itemCarrousel-2{
+    background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-3{
+    background-color: rgb(200, 226, 50);
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+
+.titulo-clasico{
+    text-align: center;
+}
+.carro{
+    display: flex;
+    text-align: center;
+}
+
+
+/*Pagina 4 contactos*/
+
+.contacto-formulario{
+    width: 50%;
+}
+
+.contacto-formulario div{
+    font-size: 23px;
+    margin: 60px;
+}
+
+.contacto-formulario input{
+    font-size: 25px;
+}
+
+.contacto-formulario {
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+}
+/*Pagina 5 Compras*/
+
+.metodo-compra{
+    display: flex;
+}
+
+.metodo-hijo{
+    margin: 0 10px;
+    text-align: center;
+}
+
+.metodo-compra img{
+    margin: 0 30px;
+    width: 400px;
+    height: 400px;
+}
+
+
+/*Pagina 4 Sobre-nosotros*/
+
+main .sobre-nosotros{
+    display: flex;
+}
+
+main .sobre-nosotros img{
+    width: 50%;
+}
+
+main .sobre-nosotros p{
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Pagina 5 Contactos*/
+
+.contacto-formulario{
+    width: 50%;
+}
+
+.contacto-formulario div{
+    font-size: 23px;
+    margin: 60px;
+}
+
+.contacto-formulario input{
+    font-size: 25px;
+}
+
+.contacto-formulario {
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+}
+
